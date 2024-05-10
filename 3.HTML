@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <title>lab1</title>
+    <head>
+        <script type="text/javascript" src="angular.min.js">
+        </script>
+        <script>
+            var app=angular.module("myapp",[]);
+            app.controller("myCntrl",function($scope){
+                $scope.num1=0
+                $scope.num2=0
+                $scope.result=0
+                $scope.operator="add"
+                $scope.compute=function()
+                {
+                    switch($scope.operator){
+                        case 'add':$scope.result= $scope.num1+ $scope.num2
+                                                    break
+                        case 'sub':$scope.result= $scope.num1- $scope.num2
+                                                    break
+                        case 'mul':$scope.result= $scope.num1* $scope.num2
+                                                    break
+                         case 'div':$scope.result= $scope.num1/ $scope.num2
+                                                    break
+                                                                    }
+                }});
+                </script>
+                </head>
+                <body ng-app="myapp">
+                    <div ng-controller="'myCntrl">
+                        enter first number<input type="number" ng-model="num1">
+                        select operator:<select ng-model="operator">
+                            <option values="add">+</option>
+                        </select>
+                    </div>
+
+
+                </body>
