@@ -1,0 +1,1 @@
+The Farmers Database Management System is a software application designed to help farmers efficiently manage their agricultural data. It provides features for storing information about crops, livestock, equipment, and more. This system aims to streamline farming operations, improve decision-making, and increase productivity.
